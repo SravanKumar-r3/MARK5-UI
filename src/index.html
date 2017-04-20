@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>MARK5UI</title>
@@ -7,8 +8,21 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+    }
+  </style>
 </head>
+
 <body>
-  <app-root>Loading...</app-root>
+  <app-root>
+    <img class="centered" src="./assets/images/icons/loader.gif" />
+  </app-root>
 </body>
+
 </html>
