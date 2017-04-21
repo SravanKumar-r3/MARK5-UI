@@ -1,6 +1,7 @@
 import { Component, NgZone } from '@angular/core';
 import { Http, RequestOptions, Headers } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
+import { HighlightDirective } from '../../modules/shared/directives/highlight.directive';
 
 
 @Component({
