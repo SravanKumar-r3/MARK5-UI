@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+//import { RouterModule} from '@angular/router';
 
 import { HighlightDirective } from './directives/highlight.directive';
+
+import {PageNotFoundComponent} from './components/PageNotFound/PageNotFound.component';
+import {CommonUtilService} from './commonUtil-service/commonUtil.service';
+import {HttpService} from './http-service/http.service';
 
 
 @NgModule({
@@ -9,10 +14,17 @@ import { HighlightDirective } from './directives/highlight.directive';
     CommonModule
   ],
   declarations: [
-    HighlightDirective
+    HighlightDirective,
+    PageNotFoundComponent
   ],
   exports:[
-    HighlightDirective
+    HighlightDirective,
+    PageNotFoundComponent
+    
+  ],
+  providers:[
+    CommonUtilService,
+    HttpService
   ]
 })
 export class SharedModule { }

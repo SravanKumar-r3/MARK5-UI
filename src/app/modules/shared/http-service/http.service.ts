@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class MainHttpService {
+export class HttpService {
 
-  constructor() { }
+constructor() { }
 
 }
