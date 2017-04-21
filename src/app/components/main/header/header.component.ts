@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
+window["$"] = $;
+window["jQuery"] = $;
 
 @Component({
   selector: 'app-header',
@@ -7,9 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  logoImg = '../../../../assets/images/icons/logo.png';
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }

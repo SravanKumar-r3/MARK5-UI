@@ -5,8 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { MaterialModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
 // Services here
@@ -40,7 +40,7 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule,
     // NgbModule.forRoot(),
-    // BrowserAnimationsModule, MaterialModule.forRoot(),
+    BrowserAnimationsModule, MaterialModule.forRoot(),
     RouterModule.forRoot(appRoutes),
     SharedModule
   ],
